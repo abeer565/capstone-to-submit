@@ -10,10 +10,6 @@ def create_app(test_config=None):
     app = Flask(__name__)
     setup_db(app)
 
-    # Uncomment the following line on the initial run to setup
-    # the required tables in the database
-
-    # db_drop_and_create_all()
 
     CORS(app, resources={r"/*": {"origins": "*"}})
 
@@ -282,7 +278,7 @@ def create_app(test_config=None):
 
         except Exception:
             abort(500)
-
+#here we will start with the error handler
     @app.errorhandler(400)
     @app.errorhandler(401)
     @app.errorhandler(403)
