@@ -20,33 +20,33 @@ class CastingAgencyTestCase(unittest.TestCase):
         setup_db(self.app)
 
         self.VALID_NEW_ACTOR = {
-            "name": "Ana de Armas",
-            "full_name": "Ana Celia de Armas Caso",
+            "name": "a ",
+            "full_name": " A B C ",
             "date_of_birth": "April 30, 1988"
         }
 
         self.INVALID_NEW_ACTOR = {
-            "name": "Ana de Armas"
+            "name": "A d A"
         }
 
         self.VALID_UPDATE_ACTOR = {
-            "full_name": "Anne Hathaway"
+            "full_name": "Anne"
         }
 
         self.INVALID_UPDATE_ACTOR = {}
 
         self.VALID_NEW_MOVIE = {
-            "title": "Suicide Squad",
+            "title": "S S",
             "duration": 137,
             "release_year": 2016,
-            "imdb_rating": 6,
-            "cast": ["Margot Robbie"]
+            "imdb_rating": 7,
+            "cast": ["M R"]
         }
 
         self.INVALID_NEW_MOVIE = {
-            "title": "Knives Out",
-            "imdb_rating": 7.9,
-            "cast": ["Ana de Armas"]
+            "title": "movie1",
+            "imdb_rating": 10,
+            "cast": ["castinhg name "]
         }
 
         self.VALID_UPDATE_MOVIE = {
